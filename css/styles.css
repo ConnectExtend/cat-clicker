@@ -1,0 +1,56 @@
+html {
+  box-sizing: border-box;
+}
+  
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Petrona', serif;
+  font-size: 16px;
+}
+
+.container, .individual-cat {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  margin: 10px auto 7px;
+  width: 455px;
+}
+
+.header {
+  color: #784e9b;
+  font: 2.2em 'Jockey One', sans-serif;
+  letter-spacing: 1.2px;
+  margin-bottom: 20px;
+  margin-top: 3px;
+  padding: 0;
+}
+
+.cat-image {
+  max-width: 100%;
+  border: solid 1px rgb(88, 88, 88);
+  border-radius: 5px;
+  width: 100%;
+}
+
+.cat-hello {
+  margin-bottom: 8px;
+  margin-top: 20px;
+}
+
+.click-caption {
+  font-size: 1.2em;
+  font-weight: bold;
+}
