@@ -1,5 +1,7 @@
-html {
+html {  
   box-sizing: border-box;
+  height: 100%;
+  overflow: hidden;
 }
   
 *,
@@ -17,6 +19,8 @@ body {
 }
 
 body {
+  height: 100%;
+  overflow: auto;
   font-family: 'Petrona', serif;
   font-size: 16px;
 }
@@ -25,7 +29,7 @@ body {
   display: flex;
   flex-flow: column wrap;
   align-items: center;
-  margin: 10px auto 7px;
+  margin: 8px auto 0;
   width: 455px;
 }
 
@@ -39,8 +43,8 @@ body {
 }
 
 .cat-image {
-  max-width: 100%;
   border: solid 1px rgb(88, 88, 88);
+  max-width: 100%;
   border-radius: 5px;
   width: 100%;
 }
