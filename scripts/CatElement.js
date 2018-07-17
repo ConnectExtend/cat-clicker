@@ -15,7 +15,7 @@ class CatElement {
         this.element.classList.add('individual-cat');
         this.element.innerHTML = `
           <h1 class="${CAT_HELLO_CLASS}">Say Hello to ${cat.name}!</h1>
-          <img class="${CAT_IMAGE_CLASS}" src="${cat.photo}" alt="${cat.altText}">
+          <img class="${CAT_IMAGE_CLASS}" src="${cat.photo}" alt="${cat.altText}" tabindex="0">
           <p class="${CLICK_CAPTION_CLASS}">
             You&#700;ve clicked ${cat.name} 
             <span class="${CLICK_COUNTER_CLASS}">0 times</span>. 
