@@ -11,7 +11,7 @@ class CatElement {
      */
     constructor(cat) {
         this.cat = cat;
-        this.element = document.createElement('div');
+        this.element = document.createElement('button');
         this.element.classList.add('individual-cat');
         this.element.innerHTML = `
           <h1 class="${CAT_HELLO_CLASS}">Say Hello to ${cat.name}!</h1>
@@ -22,14 +22,25 @@ class CatElement {
             <em>Meow!</em>
           </p>
         `;
-        // This tracks and displays the number of clicks on this cat element
+
+        let catImage = this.element.querySelector(`.${CAT_IMAGE_CLASS}`);
+
+        // This tracks and displays the number of clicks on the cat image
         let clickCount = this.element.querySelector(`.${CLICK_COUNTER_CLASS}`);
-        this.element.querySelector(`.${CAT_IMAGE_CLASS}`).addEventListener('click', e => {
+        catImage.addEventListener('click', e => {
             // Gets the current number of clicks from the span text
             let currentClicks = clickCount.textContent.split(' ')[0];
             // Updates the number of clicks in the span text
-            clickCount.textContent = 
+            clickCount.textContent =
                 `${++currentClicks} ${currentClicks == 1 ? 'time' : 'times'}`;
+        });
+        
+        // This adds support for keyboard-only users
+        this.element.addEventListener('keyup', e => {
+            if (event.key === 'Enter' || event.key === ' ') {
+                catImage.click();
+                e.preventDefault();
+            }
         });
     }
 

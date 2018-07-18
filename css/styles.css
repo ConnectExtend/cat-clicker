@@ -33,6 +33,11 @@ body {
   width: 455px;
 }
 
+.individual-cat {
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+}
+
 .header {
   color: #784e9b;
   font: 2.2em 'Jockey One', sans-serif;

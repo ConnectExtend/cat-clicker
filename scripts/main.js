@@ -6,7 +6,7 @@ const INDEX_ATTRIBUTE = 'data-index';
 
 /**
  * Holds all of the elements for all of our cats; 
- * values for a new Cat are passed into a new CatElement
+ *   values for a new Cat are passed into a new CatElement
  * This is used to populate the drop-down options
  */
 const CAT_ELEMENTS = [
