@@ -19,7 +19,7 @@ class CatElement {
       <img class="${CAT_IMAGE_CLASS}" src="${cat.photo}" alt="${
       cat.altText
     }" tabindex="0">
-      <p class="${CLICK_CAPTION_CLASS}">
+      <p class="${CLICK_CAPTION_CLASS} "tabindex="0">
       You&#700;ve clicked ${cat.name} 
       <span class="${CLICK_COUNTER_CLASS}">0 times</span>. 
       <em>Meow!</em>

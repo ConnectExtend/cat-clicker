@@ -13,16 +13,16 @@ const INDEX_ATTRIBUTE = 'data-index';
 const CAT_ELEMENTS = [
   new CatElement(
     new Cat(
-      'Oreo',
-      'black and white cat stares at camera',
-      'img/oreo.jpg',
+      'Toby',
+      'tabby cat sitting proudly in the grass',
+      'img/tabby.jpg',
     ),
   ),
   new CatElement(
     new Cat(
-      'Toby',
-      'tabby cat sitting proudly in the grass',
-      'img/tabby.jpg',
+      'Oreo',
+      'black and white cat stares at camera',
+      'img/oreo.jpg',
     ),
   ),
   new CatElement(

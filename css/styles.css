@@ -53,6 +53,7 @@ select:focus {
   border: solid 1px rgb(88, 88, 88);
   border-radius: 5px;
   width: 100%;
+  max-width: 500px;
 }
 
 .cat-hello {
