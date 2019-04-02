@@ -1,27 +1,35 @@
 <!DOCTYPE html>
 <html lang="en-US">
-
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1"
+    />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="Description"
+      content="Choose your favorite cat image, click the image and watch the click count increase. Inspired by the Cow Clicker game."
+    />
     <title>Cat Clicker Premium</title>
-    <link href="https://fonts.googleapis.com/css?family=Jockey+One|Petrona" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css">
-</head>
+    <link
+      href="https://fonts.googleapis.com/css?family=Jockey+One|Petrona"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
 
-<body>
+  <body>
     <main class="container">
-        <h1 class="header">🐾 Cat Clicker Premium 🐈</h1>
+      <h1 class="header">🐾 Cat Clicker Premium 🐈</h1>
+      <label for="menu">Which cat is your favorite?</label>
+      <select class="cat-names" id="menu">
+        <option disabled selected hidden>Select a cat by name</option>
+      </select>
 
-        <select class="cat-names">
-            <option disabled selected hidden>Select a cat by name</option>
-        </select>
-        
-        <div class="image-wrapper"></div>
+      <div class="image-wrapper"></div>
 
-        <script type="module" src="scripts/main.js"></script>
+      <script type="module" src="scripts/main.js"></script>
     </main>
-</body>
-
+  </body>
 </html>

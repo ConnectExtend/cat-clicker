@@ -11,11 +11,41 @@ const INDEX_ATTRIBUTE = 'data-index';
  * This is used to populate the drop-down options
  */
 const CAT_ELEMENTS = [
-  new CatElement(new Cat('Oreo', 'black and white cat stares at camera', 'img/oreo.jpg')),
-  new CatElement(new Cat('Toby', 'tabby cat laying in the grass', 'img/tabby.jpg')),
-  new CatElement(new Cat('Rascal', 'tiger cat looks at camera sassily', 'img/rascal.jpg')),
-  new CatElement(new Cat('Princess', 'fluffy cat lays next to a rose', 'img/princess.jpg')),
-  new CatElement(new Cat('Nova', 'gray kitten gazes into the distance', 'img/gray.jpg')),
+  new CatElement(
+    new Cat(
+      'Oreo',
+      'black and white cat stares at camera',
+      'img/oreo.jpg',
+    ),
+  ),
+  new CatElement(
+    new Cat(
+      'Toby',
+      'tabby cat sitting proudly in the grass',
+      'img/tabby.jpg',
+    ),
+  ),
+  new CatElement(
+    new Cat(
+      'Rascal',
+      'tiger cat looks at camera sassily',
+      'img/rascal.jpg',
+    ),
+  ),
+  new CatElement(
+    new Cat(
+      'Princess',
+      'fluffy cat poses with blue sky in background',
+      'img/princess.jpg',
+    ),
+  ),
+  new CatElement(
+    new Cat(
+      'Nova',
+      'gray kitten gazes into the distance',
+      'img/gray.jpg',
+    ),
+  ),
 ];
 
 // populates the drop-down options with all cat names
@@ -38,6 +68,7 @@ CAT_SELECTOR.onchange = e => {
     currentCat.hide();
   }
   const selectedOption = e.target.selectedOptions[0];
-  currentCat = CAT_ELEMENTS[selectedOption.getAttribute(INDEX_ATTRIBUTE)];
+  currentCat =
+    CAT_ELEMENTS[selectedOption.getAttribute(INDEX_ATTRIBUTE)];
   currentCat.show();
 };
