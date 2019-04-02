@@ -65,3 +65,21 @@ select:focus {
   font-size: 1.2em;
   font-weight: bold;
 }
+
+@media screen and (max-width: 399px) {
+  .header {
+    font: 1.8em 'Jockey One', sans-serif;
+    letter-spacing: 1.1px;
+    margin-bottom: 20px;
+    margin-top: 3px;
+    padding: 0;
+  }
+  .cat-hello {
+    font-size: 1.6em;
+    margin-bottom: 8px;
+    margin-top: 20px;
+  }
+  .click-caption {
+    font-size: 1.3em;
+  }
+}
